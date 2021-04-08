@@ -5,7 +5,7 @@ function Header() {
   const [showNavItems, setShowNavItems] = useState(false);
 
   const toggleNavItemVisibility = () => {
-    setShowNavItems(prev => !prev);
+    setShowNavItems((prev) => !prev);
   };
   return (
     <header className="HeaderComponent">
@@ -13,19 +13,19 @@ function Header() {
       <button className="hamburger" onClick={toggleNavItemVisibility}>
         <span></span>
       </button>
-      <nav className={`nav-items ${showNavItems ? 'visible': ''}`}>
+      <nav className={`nav-items ${showNavItems ? 'visible' : ''}`}>
         <ul>
           <li>
-            <a href="/about">CSS</a>
+            <a href="/css">CSS</a>
           </li>
           <li>
-            <a href="/blogs">React</a>
+            <a href="/react">React</a>
           </li>
           <li>
-            <a href="/">Javascript</a>
+            <a href="/javascript">Javascript</a>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <a href="/about">About me</a>
           </li>
         </ul>
       </nav>
