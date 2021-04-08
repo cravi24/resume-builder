@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import AppRoutes from '../../constants/Routes';
+
 import './index.scss';
 
 function Header() {
@@ -7,25 +10,44 @@ function Header() {
   const toggleNavItemVisibility = () => {
     setShowNavItems((prev) => !prev);
   };
+
+  const closeNavItems = () => {
+    setShowNavItems(false);
+  };
+
   return (
     <header className="HeaderComponent">
-      <div className="logo">Home</div>
-      <button className="hamburger" onClick={toggleNavItemVisibility}>
+      <Link className="logo" to={AppRoutes.Home}>
+        Home
+      </Link>
+      <button
+        className="hamburger"
+        onClick={toggleNavItemVisibility}
+        onBlur={closeNavItems}
+      >
         <span></span>
       </button>
       <nav className={`nav-items ${showNavItems ? 'visible' : ''}`}>
         <ul>
           <li>
-            <a href="/css">CSS</a>
+            <NavLink to={AppRoutes.CSS} activeClassName="active">
+              CSS
+            </NavLink>
           </li>
           <li>
-            <a href="/react">React</a>
+            <NavLink to={AppRoutes.React} activeClassName="active">
+              React
+            </NavLink>
           </li>
           <li>
-            <a href="/javascript">Javascript</a>
+            <NavLink to={AppRoutes.Javascript} activeClassName="active">
+              Javascript
+            </NavLink>
           </li>
           <li>
-            <a href="/about">About me</a>
+            <NavLink to={AppRoutes.AboutMe} activeClassName="active">
+              About me
+            </NavLink>
           </li>
         </ul>
       </nav>

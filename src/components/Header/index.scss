@@ -5,22 +5,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $teal-blue;
+    background: $bloody-mimosa;
     color: white;
     font-size: 1.2rem;
     padding-left: 1rem;
-    position: fixed;
+    padding-right: 1rem;
+    position: sticky;
     width: 100%;
     height: 10vh;
 
     @include from-small() {
-        justify-content: space-around;
+        justify-content: space-between;
         position: relative;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     .logo {
+        color: whitesmoke;
         font-size: 1.5rem;
         font-weight: bold;
+        text-decoration: none;
     }
 
     .nav-items {
@@ -39,7 +44,7 @@
         }
 
         ul {
-            background-color: $teal-blue;
+            background: $bloody-mimosa;
             list-style: none;
             margin: 0;
             padding: 1rem 0 0 0;
@@ -48,6 +53,7 @@
             @include from-small() {
                 display: flex;
                 flex-direction: row;
+                background: none;
             }
 
             li {
@@ -107,9 +113,9 @@
     }
 
     .hamburger span::before {
-        top: -0.6em;
+        top: -0.6rem;
     }
     .hamburger span::after {
-        top: 0.5em;
+        top: 0.4rem;
     }
 }
