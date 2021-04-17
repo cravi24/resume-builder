@@ -1,15 +1,21 @@
 @import '../styling/media-queries';
 
-main {
-    z-index: -1;
-    width: 100%;
+.container {
+    margin-top: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
 
     @include from-small() {
         justify-content: space-between;
         position: relative;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media print {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
 }

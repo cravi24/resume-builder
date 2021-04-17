@@ -1,7 +1,7 @@
 export default Object.freeze({
-  CSS: '/css',
   Home: '/',
-  React: '/react',
-  Javascript: '/js',
+  TechBlogs: '/tech-blogs',
+  ResumeBuilder: '/resume-builder',
+  PersonalBlogs: '/pers-blogs',
   AboutMe: '/about',
 });

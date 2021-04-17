@@ -11,14 +11,12 @@
     padding-left: 1rem;
     padding-right: 1rem;
     position: sticky;
-    width: 100%;
     height: 10vh;
-
     @include from-small() {
         justify-content: space-between;
         position: relative;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 15%;
+        padding-right: 15%;
     }
 
     .logo {
@@ -40,7 +38,6 @@
         @include from-small() {
             all: unset;
             transform: scale(1, 1);
-            padding-right: 1rem;
         }
 
         ul {
@@ -64,7 +61,6 @@
                     color: whitesmoke;
                     opacity: 0;
                     text-decoration: none;
-                    text-transform: uppercase;
                     transition: opacity 200ms ease-in-out;
 
                     @include from-small() {
@@ -117,5 +113,12 @@
     }
     .hamburger span::after {
         top: 0.4rem;
+    }
+}
+
+@media print {
+    .HeaderComponent {
+        // -webkit-print-color-adjust: exact;
+        display: none;
     }
 }

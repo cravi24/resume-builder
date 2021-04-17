@@ -30,18 +30,18 @@ function Header() {
       <nav className={`nav-items ${showNavItems ? 'visible' : ''}`}>
         <ul>
           <li>
-            <NavLink to={AppRoutes.CSS} activeClassName="active">
-              CSS
+            <NavLink to={AppRoutes.ResumeBuilder} activeClassName="active">
+            Resume Builder
             </NavLink>
           </li>
           <li>
-            <NavLink to={AppRoutes.React} activeClassName="active">
-              React
+            <NavLink to={AppRoutes.TechBlogs} activeClassName="active">
+            Tech Blogs
             </NavLink>
           </li>
           <li>
-            <NavLink to={AppRoutes.Javascript} activeClassName="active">
-              Javascript
+            <NavLink to={AppRoutes.PersonalBlogs} activeClassName="active">
+            Personal Blogs
             </NavLink>
           </li>
           <li>

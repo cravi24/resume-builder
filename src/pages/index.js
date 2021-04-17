@@ -1,10 +1,10 @@
-import CssPage from './Css';
+import ResumeBuilder from './ResumeBuilder';
 import AboutMePage from './AboutMe';
-import ReactPage from './React';
+import PersonalBlogsPage from './PersonalBlogs';
 import HomePage from './Home';
-import JavascriptPage from './Javascript';
+import TechBlogsPage from './TechBlogsPage';
 
 import './index.scss';
 
-const Pages = { AboutMePage, CssPage, HomePage, JavascriptPage, ReactPage };
+const Pages = { AboutMePage, ResumeBuilder, HomePage, TechBlogsPage, PersonalBlogsPage };
 export default Pages;

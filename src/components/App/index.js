@@ -3,7 +3,6 @@ import Footer from '../Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import AppRoutes from '../../constants/Routes';
 import Pages from '../../pages';
-import './index.scss';
 
 function App() {
   return (
@@ -14,14 +13,14 @@ function App() {
           <Route path={AppRoutes.AboutMe}>
             <Pages.AboutMePage />
           </Route>
-          <Route path={AppRoutes.CSS}>
-            <Pages.CssPage />
+          <Route path={AppRoutes.ResumeBuilder}>
+            <Pages.ResumeBuilder />
           </Route>
-          <Route path={AppRoutes.Javascript}>
-            <Pages.JavascriptPage />
+          <Route path={AppRoutes.TechBlogs}>
+            <Pages.TechBlogsPage />
           </Route>
-          <Route path={AppRoutes.React}>
-            <Pages.ReactPage />
+          <Route path={AppRoutes.PersonalBlogs}>
+            <Pages.PersonalBlogsPage />
           </Route>
           <Route path={AppRoutes.Home}>
             <Pages.HomePage />
