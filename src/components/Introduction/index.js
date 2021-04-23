@@ -5,8 +5,8 @@ import saveIcon from '../../assets/svg/save-f.svg';
 
 function Introduction() {
   const [isEditModeOn, setIsEditModeOn] = useState(false);
-  const [name, setName] = useState('Ravi Chaudhary');
-  const [title, setTitle] = useState('Fullstack Software Engineer');
+  const [name, setName] = useState('Pratiksha Chaudhary');
+  const [title, setTitle] = useState('Frontend Software Engineer');
   const [summary, setSummary] = useState(
     `To work in a professional organization that gives an opportunity of continuous learning and demands
     proactive, talented and dedicated people to boost the company's growth`
@@ -25,7 +25,7 @@ function Introduction() {
     <div className="IntroductionComponent">
       <div className="candidate-header">
         <div className="candidate-name">{name}</div>
-        <img src={editPencil} onClick={() => setIsEditModeOn(true)} alt="d" />
+        {/* <div className="edit-icon"><img src={editPencil} onClick={() => setIsEditModeOn(true)} alt="edit icon" /></div> */}
       </div>
       <div className="candidate-title">{title}</div>
       <p className="candidate-summary">{summary}</p>
@@ -49,3 +49,4 @@ const editableIntroduction = (name, title, summary, saveIntroduction) => (
 );
 
 export default Introduction;
+

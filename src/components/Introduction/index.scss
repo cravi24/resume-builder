@@ -1,19 +1,22 @@
 .IntroductionComponent{
     .candidate-header {
+        position: relative;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     .candidate-name {
         display: block;
         font-weight: bolder;
         font-size: 44px;
+        width: 90%;
     }
 
     .candidate-title {
         display: block;
         font-size: 22px;
         font-weight: 600;
-        width: 40%;
+        width: 90%;
     }
 
     .candidate-summary {
@@ -21,5 +24,15 @@
         font-size: 18px;
         width: 100%;
         height: 100%;
+    }
+
+    .edit-icon {
+        position: absolute;
+        right: 0px;
+    }
+    
+    img{
+        height: 25px;
+        width: 25px;
     }
 }
