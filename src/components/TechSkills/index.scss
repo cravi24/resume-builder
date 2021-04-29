@@ -1,8 +1,18 @@
+@import '../../styling/media-queries';
+
 .TechSkillsComponent {
+    grid-area: tech;
+    margin-bottom: 1rem;
+
+    @include from-large(){
+        margin-bottom: 2rem;
+    }
+
     .skill {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-right: 1rem;
 
         img {
             height: 18px;

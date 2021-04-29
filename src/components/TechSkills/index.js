@@ -13,7 +13,7 @@ function TechSkills() {
             <img src={cogsIcon} alt="tech skills icon" />
             <div className="">Skills</div>
           </div>
-          {/* <img src={editPencil} alt="d" /> */}
+          <img src={editPencil} alt="d" />
         </div>
 
         <div className="skill">

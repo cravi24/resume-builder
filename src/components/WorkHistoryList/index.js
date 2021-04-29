@@ -16,10 +16,10 @@ function WorkHistoryList() {
           <img src={boxIcon} alt="work history icon" />
           <div className="">Work History</div>
         </div>
-        {/* <img src={editPencil} alt="d" /> */}
+        <img src={editPencil} alt="d" />
       </div>
-      {workExperienceArr.map((workItem) => (
-        <div className="work-history">
+      {workExperienceArr.map((workItem, i) => (
+        <div className="work-history" key={i}>
           <div className="left-column">
             <span>{workItem.startDuration} -</span><br/>
             <span>{workItem.endDuration}</span>
@@ -28,8 +28,8 @@ function WorkHistoryList() {
             <div className="title">{workItem.title}</div>
             <span>{workItem.companyName}</span>
             <ul>
-              {workItem.responsibilities.map((res) => (
-                <li>{res}</li>
+              {workItem.responsibilities.map((res, i) => (
+                <li key={i}>{res}</li>
               ))}
             </ul>
           </div>

@@ -10,14 +10,14 @@ function Contact() {
           <img src={userIcon} alt="work history icon" />
           <div className="">Contact</div>
         </div>
-        {/* <img src={editPencil} alt="Edit contact" /> */}
+        <img src={editPencil} alt="Edit contact" />
       </div>
       <div className="contact-header">Address</div>
       <p>Berlin, BE, 12059</p>
       <div className="contact-header">Phone</div>
-      <p>0 176 350 910 49</p>
+      <p>017635091028</p>
       <div className="contact-header">Email</div>
-      <span>pratiksha.chaudhary.89@gmail.com</span>
+      <span>dummy@gmail.com</span>
     </div>
   );
 }

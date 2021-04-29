@@ -25,7 +25,7 @@ function Introduction() {
     <div className="IntroductionComponent">
       <div className="candidate-header">
         <div className="candidate-name">{name}</div>
-        {/* <div className="edit-icon"><img src={editPencil} onClick={() => setIsEditModeOn(true)} alt="edit icon" /></div> */}
+        <div className="edit-icon"><img src={editPencil} onClick={() => setIsEditModeOn(true)} alt="edit icon" /></div>
       </div>
       <div className="candidate-title">{title}</div>
       <p className="candidate-summary">{summary}</p>

@@ -1,5 +1,12 @@
+@import '../../styling/media-queries';
 .contact {
     word-wrap: break-word;
+    grid-area: contact;
+
+    @include from-large(){
+        margin-bottom: 2rem;
+    }
+
     .contact-header {
         font-size: 16px;
         font-weight: 700;

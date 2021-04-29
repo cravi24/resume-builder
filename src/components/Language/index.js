@@ -12,7 +12,7 @@ function Language() {
           <img src={flagIcon} alt="language icon" />
           <div className="">Language</div>
         </div>
-        {/* <img src={editPencil} alt="d" /> */}
+        <img src={editPencil} alt="d" />
       </div>
 
       <div className="skill">
