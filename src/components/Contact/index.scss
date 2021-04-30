@@ -1,4 +1,5 @@
 @import '../../styling/media-queries';
+
 .contact {
     word-wrap: break-word;
     grid-area: contact;
@@ -15,5 +16,11 @@
 
     p {
         line-height: 0;
+    }
+}
+
+@media print {
+    .edit-icon {
+        display: none;
     }
 }

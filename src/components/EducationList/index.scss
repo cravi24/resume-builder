@@ -12,7 +12,7 @@
             font-weight: 700;
         }
 
-        .right-column{
+        .right-column {
             margin-left: 1rem;
             width: 80%;
 
@@ -25,5 +25,11 @@
                 padding-left: 0;
             }
         }
+    }
+}
+
+@media print {
+    .edit-icon {
+        display: none;
     }
 }

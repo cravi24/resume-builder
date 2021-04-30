@@ -1,7 +1,7 @@
 [
   {
     "title": "Associate Consultant",
-    "companyName": "KPMG",
+    "subtitle": "KPMG",
     "startDuration": "May 2020",
     "endDuration": "Oct 2020",
     "responsibilities": [
@@ -12,7 +12,7 @@
   },
   {
     "title": "Technical Consultant",
-    "companyName": "Birlasoft",
+    "subtitle": "Birlasoft",
     "startDuration": "Feb 2018",
     "endDuration": "Apr 2020",
     "responsibilities": [
@@ -24,7 +24,7 @@
   },
   {
     "title": "Project Coordinator",
-    "companyName": "HCL",
+    "subtitle": "HCL",
     "startDuration": "Feb 2016",
     "endDuration": "Jan 2018",
     "responsibilities": [
@@ -35,7 +35,7 @@
   },
   {
     "title": "Operations Executive",
-    "companyName": "HGS",
+    "subtitle": "HGS",
     "startDuration": "May 2014",
     "endDuration": "Dec 2014",
     "responsibilities": [

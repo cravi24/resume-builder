@@ -20,3 +20,8 @@
         }
     }
 }
+@media print {
+    .edit-icon {
+        display: none;
+    }
+}

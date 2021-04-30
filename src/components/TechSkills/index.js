@@ -1,20 +1,22 @@
+import { useState } from 'react';
 import './index.scss';
 import cogsIcon from '../../assets/svg/cogs.svg';
 import editPencil from '../../assets/svg/pencil-f.svg';
 import emptyCirle from '../../assets/svg/circle.svg';
 import filledCirle from '../../assets/svg/circle-f.svg';
+import IconHeader from '../IconHeader';
 
 function TechSkills() {
+  const [isEditModeOn, setIsEditModeOn] = useState(false);
   return (
     <div className="TechSkillsComponent">
       <div className="work-history">
-        <div className="container-headers">
-          <div className="header-with-icon">
-            <img src={cogsIcon} alt="tech skills icon" />
-            <div className="">Skills</div>
-          </div>
-          <img src={editPencil} alt="d" />
-        </div>
+        <IconHeader
+          icon={cogsIcon}
+          header="Skills"
+          editPencil={editPencil}
+          setIsEditModeOn={setIsEditModeOn}
+        />
 
         <div className="skill">
           Javascript

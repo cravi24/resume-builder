@@ -3,17 +3,17 @@ import flagIcon from '../../assets/svg/flag.svg';
 import editPencil from '../../assets/svg/pencil-f.svg';
 import emptyCirle from '../../assets/svg/circle.svg';
 import filledCirle from '../../assets/svg/circle-f.svg';
+import IconHeader from '../IconHeader';
 
 function Language() {
   return (
     <div className="LanguageComponent">
-      <div className="container-headers">
-        <div className="header-with-icon">
-          <img src={flagIcon} alt="language icon" />
-          <div className="">Language</div>
-        </div>
-        <img src={editPencil} alt="d" />
-      </div>
+      <IconHeader
+        icon={flagIcon}
+        header="Language"
+        editPencil={editPencil}
+        setIsEditModeOn={() => {}}
+      />
 
       <div className="skill">
         English

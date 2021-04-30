@@ -2,7 +2,7 @@
    title and date are not printed */
 @page {
   size: auto;
-  margin: 0mm;
+  margin: 10mm 5mm;
 }
 
 body {
