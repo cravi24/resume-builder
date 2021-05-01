@@ -1,4 +1,4 @@
-import editPencil from '../../assets/svg/pencil-f.svg';
+import addIcon from '../../assets/svg/plus-circle.svg';
 import saveIcon from '../../assets/svg/save-f.svg';
 import boxIcon from '../../assets/svg/box.svg';
 import workExperienceList from './work-history.json';
@@ -16,7 +16,7 @@ function WorkHistoryList() {
       <IconHeader
           icon={boxIcon}
           header="Work History"
-          editPencil={editPencil}
+          editPencil={addIcon}
           setIsEditModeOn={setIsEditModeOn}
         />
       {workExperienceArr.map((workItem, i) => (

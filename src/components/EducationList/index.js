@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './index.scss';
-import editPencil from '../../assets/svg/pencil-f.svg';
+import addIcon from '../../assets/svg/plus-circle.svg';
 import saveIcon from '../../assets/svg/save-f.svg';
 import boxIcon from '../../assets/svg/degree.svg';
 import educationDegrees from './education.json';
@@ -16,7 +16,7 @@ function EducationList() {
       <IconHeader
         icon={boxIcon}
         header="Education"
-        editPencil={editPencil}
+        editPencil={addIcon}
         setIsEditModeOn={setIsEditModeOn}
       />
       {educationDegreeArr.map((degree, i) => (

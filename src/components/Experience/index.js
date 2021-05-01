@@ -1,3 +1,4 @@
+import removeIcon from '../../assets/svg/minus-circle.svg';
 import './index.scss';
 
 function Experience({ experience }) {
@@ -9,12 +10,19 @@ function Experience({ experience }) {
         <span>{experience.endDuration}</span>
       </div>
       <div className="right-column">
-        <div className="title">{experience.title}</div>
+        <div className="title">
+          {experience.title}
+          <img
+            className="edit-icon"
+            src={removeIcon}
+            alt="Edit icon"
+            onClick={() => {}}
+          />
+        </div>
         <span>{experience.subtitle}</span>
         <ul>
-          {experience.responsibilities && experience.responsibilities.map((res, i) => (
-            <li key={i}>{res}</li>
-          ))}
+          {experience.responsibilities &&
+            experience.responsibilities.map((res, i) => <li key={i}>{res}</li>)}
         </ul>
       </div>
     </div>
