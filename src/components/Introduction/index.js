@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './index.scss';
 import editPencil from '../../assets/svg/pencil-f.svg';
 import saveIcon from '../../assets/svg/save-f.svg';
+import IconHeader from '../IconHeader';
 
 function Introduction() {
   const [isEditModeOn, setIsEditModeOn] = useState(false);
@@ -22,15 +23,12 @@ function Introduction() {
     return editableIntroduction(name, title, summary, saveIntroduction);
   return (
     <div className="IntroductionComponent">
-      <div className="candidate-header">
-        <div className="candidate-name">{name}</div>
-        <img
-          className="edit-icon"
-          src={editPencil}
-          onClick={() => setIsEditModeOn(true)}
-          alt="edit icon"
-        />
-      </div>
+      <IconHeader
+        editPencil={editPencil}
+        header={name}
+        setIsEditModeOn={setIsEditModeOn}
+        styleClass="candidate-name"
+      />
       <div className="candidate-title">{title}</div>
       <p className="candidate-summary">{summary}</p>
     </div>

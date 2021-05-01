@@ -7,6 +7,7 @@ import Experience from '../Experience';
 import IconHeader from '../IconHeader';
 
 function WorkHistoryList() {
+  const [isEditModeOn, setIsEditModeOn] = useState(false);
   const [workExperienceArr, setWorkExperienceArr] = useState(
     workExperienceList
   );
@@ -16,7 +17,7 @@ function WorkHistoryList() {
           icon={boxIcon}
           header="Work History"
           editPencil={editPencil}
-          setIsEditModeOn={() => {}}
+          setIsEditModeOn={setIsEditModeOn}
         />
       {workExperienceArr.map((workItem, i) => (
         <Experience experience={workItem} key={i} />

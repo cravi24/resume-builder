@@ -1,11 +1,11 @@
 import './index.scss';
 
-function IconHeader({ icon, editPencil, header, setIsEditModeOn }) {
+function IconHeader({ icon, editPencil, header, setIsEditModeOn, styleClass }) {
   return (
     <div className="IconHeaderComponent">
       <div className="header-with-icon">
         {icon && <img src={icon} alt={`${header} icon`} />}
-        <div className="">{header}</div>
+        <div className={styleClass}>{header}</div>
       </div>
       {editPencil && (
         <img

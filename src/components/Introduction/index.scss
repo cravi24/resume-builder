@@ -1,5 +1,6 @@
 .IntroductionComponent{
     grid-area: introduction;
+    position: relative;
     .candidate-header {
         position: relative;
         display: flex;
@@ -26,20 +27,9 @@
         width: 100%;
         height: fit-content;
     }
-
-    .edit-icon {
-        position: absolute;
-        right: 0px;
-    }
     
     img{
         height: 25px;
         width: 25px;
-    }
-}
-
-@media print {
-    .edit-icon {
-        display: none;
     }
 }
