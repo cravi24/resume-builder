@@ -26,7 +26,7 @@ function Introduction() {
       <IconHeader
         editPencil={editPencil}
         header={name}
-        setIsEditModeOn={setIsEditModeOn}
+        setIsEditModeOn={() => setIsEditModeOn(true)}
         styleClass="candidate-name"
       />
       <div className="candidate-title">{title}</div>

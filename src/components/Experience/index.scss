@@ -5,7 +5,7 @@
         width: 25px;
     }
 
-    .title {
+    .title , .edit-experience-item{
         display: flex;
         justify-content: space-between;
     }
@@ -26,6 +26,21 @@
         ul {
             margin-left: 1rem;
             padding-left: 0;
+        }
+    }
+
+    .edit-experience-list{
+        display: flex;
+        margin-top: 1rem;
+        ul {
+            display: flex;
+            width: 50%;
+            margin:0;
+            flex-direction: column;
+
+            textarea{
+                margin-bottom: 0.5rem;
+            }
         }
     }
 }

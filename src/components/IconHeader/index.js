@@ -12,7 +12,7 @@ function IconHeader({ icon, editPencil, header, setIsEditModeOn, styleClass }) {
           className="edit-icon"
           src={editPencil}
           alt="Edit icon"
-          onClick={() => setIsEditModeOn(true)}
+          onClick={setIsEditModeOn}
         />
       )}
     </div>

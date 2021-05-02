@@ -33,7 +33,7 @@ function Contact() {
         icon={userIcon}
         header="Contact"
         editPencil={editPencil}
-        setIsEditModeOn={setIsEditModeOn}
+        setIsEditModeOn={() => setIsEditModeOn(true)}
       />
       <div className="contact-header">Address</div>
       <p>{address}</p>
