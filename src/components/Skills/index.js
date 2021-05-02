@@ -1,7 +1,4 @@
-import emptyCirle from '../../assets/svg/circle.svg';
-import filledCirle from '../../assets/svg/circle-f.svg';
-
-import "./index.scss";
+import './index.scss';
 
 function Skills({ skills }) {
   return (
@@ -10,12 +7,12 @@ function Skills({ skills }) {
         return (
           <div className="skill">
             {skill.name}
-            <div>
+            <div className="rating">
               {[...Array(parseInt(skill.rating))].map((item) => (
-                <img src={filledCirle} alt="tech skills icon" />
+                <div className="filled-circle" />
               ))}
               {[...Array(parseInt(5 - skill.rating))].map((item) => (
-                <img src={emptyCirle} alt="tech skills icon" />
+                <div className="empty-circle" />
               ))}
             </div>
           </div>

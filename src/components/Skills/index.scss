@@ -4,10 +4,32 @@
         justify-content: space-between;
         align-items: center;
         margin-right: 1rem;
+        padding: 2px;
 
-        img {
+
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+
+        .empty-circle,
+        .filled-circle {
             height: 18px;
             width: 18px;
+            border-radius: 50%;
+            display: inline-block;
+            border: 1px solid black;
+            margin: 2px;
         }
+        .filled-circle {
+            background-color: black;
+        }
+    }
+}
+
+@media print {
+    .filled-circle {
+        background-color: black;
+        -webkit-print-color-adjust: exact; 
     }
 }
