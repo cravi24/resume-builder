@@ -1,17 +1,6 @@
 .LanguageComponent {
     grid-area: language;
     margin-bottom: 1rem;
-    .skill {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-right: 1rem;
-
-        img {
-            height: 18px;
-            width: 18px;
-        }
-    }
 }
 
 @media print {
