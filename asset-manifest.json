@@ -1,20 +1,18 @@
 {
   "files": {
-    "main.css": "/resume-builder/static/css/main.df025e76.chunk.css",
-    "main.js": "/resume-builder/static/js/main.2cdb4ce2.chunk.js",
-    "main.js.map": "/resume-builder/static/js/main.2cdb4ce2.chunk.js.map",
+    "main.css": "/resume-builder/static/css/main.69568e17.chunk.css",
+    "main.js": "/resume-builder/static/js/main.103cc1f0.chunk.js",
+    "main.js.map": "/resume-builder/static/js/main.103cc1f0.chunk.js.map",
     "runtime-main.js": "/resume-builder/static/js/runtime-main.0ec3b15a.js",
     "runtime-main.js.map": "/resume-builder/static/js/runtime-main.0ec3b15a.js.map",
-    "static/js/2.434b4b9e.chunk.js": "/resume-builder/static/js/2.434b4b9e.chunk.js",
-    "static/js/2.434b4b9e.chunk.js.map": "/resume-builder/static/js/2.434b4b9e.chunk.js.map",
+    "static/js/2.70f1bb33.chunk.js": "/resume-builder/static/js/2.70f1bb33.chunk.js",
+    "static/js/2.70f1bb33.chunk.js.map": "/resume-builder/static/js/2.70f1bb33.chunk.js.map",
     "static/js/3.894d4923.chunk.js": "/resume-builder/static/js/3.894d4923.chunk.js",
     "static/js/3.894d4923.chunk.js.map": "/resume-builder/static/js/3.894d4923.chunk.js.map",
     "index.html": "/resume-builder/index.html",
-    "static/css/main.df025e76.chunk.css.map": "/resume-builder/static/css/main.df025e76.chunk.css.map",
-    "static/js/2.434b4b9e.chunk.js.LICENSE.txt": "/resume-builder/static/js/2.434b4b9e.chunk.js.LICENSE.txt",
+    "static/css/main.69568e17.chunk.css.map": "/resume-builder/static/css/main.69568e17.chunk.css.map",
+    "static/js/2.70f1bb33.chunk.js.LICENSE.txt": "/resume-builder/static/js/2.70f1bb33.chunk.js.LICENSE.txt",
     "static/media/box.71f79aaa.svg": "/resume-builder/static/media/box.71f79aaa.svg",
-    "static/media/circle-f.843b42c6.svg": "/resume-builder/static/media/circle-f.843b42c6.svg",
-    "static/media/circle.9bb40936.svg": "/resume-builder/static/media/circle.9bb40936.svg",
     "static/media/cogs.9728d586.svg": "/resume-builder/static/media/cogs.9728d586.svg",
     "static/media/degree.44cb5b49.svg": "/resume-builder/static/media/degree.44cb5b49.svg",
     "static/media/flag.6fc4eb86.svg": "/resume-builder/static/media/flag.6fc4eb86.svg",
@@ -27,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0ec3b15a.js",
-    "static/js/2.434b4b9e.chunk.js",
-    "static/css/main.df025e76.chunk.css",
-    "static/js/main.2cdb4ce2.chunk.js"
+    "static/js/2.70f1bb33.chunk.js",
+    "static/css/main.69568e17.chunk.css",
+    "static/js/main.103cc1f0.chunk.js"
   ]
 }
