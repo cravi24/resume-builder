@@ -6,14 +6,13 @@
         margin-right: 1rem;
         padding: 2px;
 
-
         .rating {
             display: flex;
             align-items: center;
         }
 
-        .empty-circle,
-        .filled-circle {
+        .circle,
+        .edit-circle {
             height: 18px;
             width: 18px;
             border-radius: 50%;
@@ -21,7 +20,24 @@
             border: 1px solid black;
             margin: 2px;
         }
+
+        .edit-circle::after {
+            content: ' \0020';
+            display: inline-block;
+            width: 23px;
+            height: 22px;
+        }
         .filled-circle {
+            background-color: black;
+        }
+
+        .edit-rating {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        
+        .edit-circle:hover,
+        .edit-circle:hover ~ .edit-circle {
             background-color: black;
         }
     }
@@ -30,6 +46,6 @@
 @media print {
     .filled-circle {
         background-color: black;
-        -webkit-print-color-adjust: exact; 
+        -webkit-print-color-adjust: exact;
     }
 }

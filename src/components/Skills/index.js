@@ -1,18 +1,22 @@
+import EditSkills from './EditSkills';
 import './index.scss';
 
-function Skills({ skills }) {
+function Skills({ skills, isEditModeOn, setIsEditModeOn }) {
+  if (isEditModeOn) {
+    return <EditSkills skills={skills} />;
+  }
   return (
     <div className="SkillsComponent">
-      {skills.map((skill) => {
+      {skills.map((skill, i) => {
         return (
-          <div className="skill">
+          <div className="skill" key={i}>
             {skill.name}
             <div className="rating">
-              {[...Array(parseInt(skill.rating))].map((item) => (
-                <div className="filled-circle" />
-              ))}
-              {[...Array(parseInt(5 - skill.rating))].map((item) => (
-                <div className="empty-circle" />
+              {[...Array(5)].map((item, i) => (
+                <div
+                  className={`circle ${i < skill.rating && 'filled-circle'}`}
+                  key={i}
+                />
               ))}
             </div>
           </div>

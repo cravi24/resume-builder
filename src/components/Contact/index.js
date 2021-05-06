@@ -48,13 +48,12 @@ function Contact() {
 const editableContact = (address, phoneNumber, email, saveContact) => {
   return (
     <div className="contact">
-      <div className="container-headers">
-        <div className="header-with-icon">
-          <img src={userIcon} alt="work history icon" />
-          <div className="">Contact</div>
-        </div>
-        <img src={saveIcon} onClick={saveContact} alt="save icon" />
-      </div>
+      <IconHeader
+        icon={userIcon}
+        header="Contact"
+        editPencil={saveIcon}
+        setIsEditModeOn={saveContact}
+      />
       <div className="contact-header">Address</div>
       <input id="address" defaultValue={address} type="text" />
       <div className="contact-header">Phone</div>
