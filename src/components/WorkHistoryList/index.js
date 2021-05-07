@@ -17,10 +17,10 @@ function WorkHistoryList() {
         editPencil={addIcon}
         setIsEditModeOn={() => {
           const placeHolderREsponsibility = {
-            startDuration: "2010",
+            startDuration: '2010',
             title: 'your title',
             subtitle: 'your subtitle',
-            responsibilities: ["your responsibility 1"],
+            responsibilities: ['your responsibility 1'],
             editModeOn: true,
           };
           setWorkExperienceArr((prev) => [placeHolderREsponsibility, ...prev]);

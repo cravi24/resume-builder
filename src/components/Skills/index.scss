@@ -4,7 +4,7 @@
         justify-content: space-between;
         align-items: center;
         margin-right: 1rem;
-        padding: 2px;
+        padding: 1px;
 
         .rating {
             display: flex;
@@ -18,14 +18,14 @@
             border-radius: 50%;
             display: inline-block;
             border: 1px solid black;
-            margin: 2px;
+            margin: 1px;
         }
 
         .edit-circle::after {
             content: ' \0020';
             display: inline-block;
-            width: 23px;
-            height: 22px;
+            width: 22px;
+            height: 20px;
         }
         .filled-circle {
             background-color: black;

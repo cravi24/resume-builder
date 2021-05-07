@@ -5,7 +5,8 @@
         width: 25px;
     }
 
-    .title , .edit-experience-item{
+    .title,
+    .edit-experience-item {
         display: flex;
         justify-content: space-between;
     }
@@ -24,21 +25,31 @@
             font-weight: 700;
         }
         ul {
+            margin-top: 0.5rem;
             margin-left: 1rem;
             padding-left: 0;
         }
     }
 
-    .edit-experience-list{
+    .add-linebreak {
+        font-size: 16px;
+        font-weight: 400;
+        color: grey;
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .edit-experience-list {
         display: flex;
         margin-top: 1rem;
         ul {
             display: flex;
             width: 50%;
-            margin:0;
+            margin: 0;
             flex-direction: column;
 
-            textarea{
+            textarea {
                 margin-bottom: 0.5rem;
             }
         }
@@ -46,7 +57,8 @@
 }
 
 @media print {
-    .edit-icon {
+    .edit-icon,
+    .add-linebreak {
         display: none;
     }
 }
