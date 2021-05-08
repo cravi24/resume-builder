@@ -5,6 +5,7 @@
     padding: 0 1rem;
     display: grid;
     grid-template-areas:
+        'font-selector'
         'introduction'
         'contact'
         'work'
@@ -33,6 +34,7 @@
         display: grid;
         grid-template-columns: 30% 70%;
         grid-template-areas:
+            'font-selector font-selector'
             'introduction introduction'
             'contact work'
             'skills work'
@@ -90,13 +92,15 @@
         display: grid;
         grid-template-columns: 30% 70%;
         grid-template-areas:
+            'font-selector font-selector'
             'introduction introduction'
             'contact work'
             'skills work'
             'skills education';
     }
 
-    .work, .education {
+    .work,
+    .education {
         margin-left: 2rem;
     }
 }
