@@ -1,0 +1,14 @@
+.FontSelectorComponent {
+    font-size: larger;
+
+    select {
+        font-size: large;
+        margin-left: 1rem;
+    }
+}
+
+@media print {
+    .FontSelectorComponent {
+        display: none;
+    }
+}
