@@ -9,8 +9,8 @@ function FontSelector({ setFont }) {
         id="current-font"
         onChange={() => setFont(document.getElementById('current-font').value)}
       >
-        <option value="Times New Roman">Times New Roman</option>
         <option value="Rubik">Rubik</option>
+        <option value="Times New Roman">Times New Roman</option>
         <option value="Segoe UI">Segoe UI</option>
         <option value="Roboto">Roboto</option>
         <option value="Helvetica Neue">Helvetica Neue</option>
